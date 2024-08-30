@@ -1,12 +1,15 @@
-# Python program to find the factorial of a number provided by the user
-num = 7  # Change this value for a different result
+# Python program to print the Fibonacci series up to n terms
 
-factorial = 1
-if num < 0:
-    print("Sorry, factorial does not exist for negative numbers")
-elif num == 0:
-    print("The factorial of 0 is 1")
-else:
-    for i in range(1, num + 1):
-        factorial *= i
-    print(f"The factorial of {num} is {factorial}")
+# Function to print Fibonacci series
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+# Number of terms
+num_terms = 10  # You can change this value for a different result
+
+# Print the Fibonacci series
+fibonacci(num_terms)
+
